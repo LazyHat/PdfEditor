@@ -109,7 +109,7 @@ private fun rememberPathPickerLauncher(onResult: (Uri) -> Unit) = rememberLaunch
 }
 
 //Запуск активити, которая редактирует PDF
-private fun openDocumentEditor(uri: Uri, context: Context) {
+fun openDocumentEditor(uri: Uri, context: Context) {
     DocumentActivity.openDocument(
         context,
         uri,
